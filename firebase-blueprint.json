@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "A generated website project",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The name of the project" },
+        "code": { "type": "string", "description": "The generated HTML code" },
+        "userId": { "type": "string", "description": "ID of the user who owns the project" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Last update timestamp" }
+      },
+      "required": ["name", "code", "userId", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": "Project",
+      "description": "Collection of AI generated website projects"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "WebStudio AI",
+  "description": "An AI-powered website generator inspired by Google AI Studio, allowing users to build, preview, and iterate on websites using natural language.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
